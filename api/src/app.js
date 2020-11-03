@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
-
 const cors = require('cors');
+
+const database = require('./models/repository')
+database.connect()
 
 const maravilhosas = require('./routes/maravilhosas-routes');
 
